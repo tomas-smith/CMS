@@ -48,7 +48,7 @@ include "includes/header.php";
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span><?php echo $post_date ?></p>
                 <hr>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+                <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
                 <hr>
                 <p><?php echo $post_content ?></p>
                 <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -63,9 +63,7 @@ include "includes/header.php";
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
-            <?php
-        include "includes/sidebar.php";
-        ?>   
+            <?php include "includes/sidebar.php"; ?>   
         <!-- /.row -->
 
         <hr>
